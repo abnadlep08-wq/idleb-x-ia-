@@ -1,0 +1,11 @@
+{
+  "name": "idleb-x-ia",
+  "version": "1.0.0",
+  "description": "AI Video Processing Platform",
+  "type": "module",
+  "dependencies": {
+    "magic-hour": "latest",
+    "node-fetch": "^3.3.2",
+    "form-data": "^4.0.0"
+  }
+}
