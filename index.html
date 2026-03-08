@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idleb X IA - منصة الذكاء الاصطناعي لتعديل الفيديوهات</title>
+    
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="/" class="logo">
+                    <span class="logo-icon">✨</span>
+                    Idleb <span>X IA</span>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link active">الرئيسية</a>
+                    <a href="#features" class="nav-link">المميزات</a>
+                    <a href="#how-it-works" class="nav-link">كيف يعمل</a>
+                    <a href="#pricing" class="nav-link">الباقات</a>
+                    <a href="#processor" class="nav-link">المعالج</a>
+                    <a href="#contact" class="nav-link">اتصل بنا</a>
+                </div>
+                
+                <div class="nav-buttons">
+                    <button class="btn btn-outline" id="loginBtn">تسجيل الدخول</button>
+                    <button class="btn btn-primary" id="signupBtn">ابدأ مجاناً</button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي مع الصورة الكبيرة -->
+    <section id="home" class="hero" id="heroSection">
+        <div class="hero-overlay"></div>
+        <div class="hero-background" id="heroBackground"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge">✨ مدعوم بالذكاء الاصطناعي</span>
+                </div>
+                <h1 class="hero-title">
+                    حول فيديوهاتك إلى
+                    <span class="gradient-text">أعمال فنية</span>
+                    بلمسة ذكاء
+                </h1>
+                <p class="hero-description">
+                    منصة Idleb X IA تقدم لك أحدث تقنيات الذكاء الاصطناعي لتعديل وتحسين الفيديوهات 
+                    بشكل احترافي في ثوانٍ معدودة
+                </p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary btn-large" onclick="document.getElementById('processor').scrollIntoView({behavior: 'smooth'})">
+                        <i class="fas fa-play"></i>
+                        جرب المعالج الآن
+                    </button>
+                    <button class="btn btn-outline-light btn-large" onclick="document.getElementById('how-it-works').scrollIntoView({behavior: 'smooth'})">
+                        <i class="fas fa-video"></i>
+                        شاهد كيف يعمل
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">+50K</span>
+                        <span class="stat-label">فيديو معالج</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">+10K</span>
+                        <span class="stat-label">مستخدم نشط</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">٩٨٪</span>
+                        <span class="stat-label">رضا العملاء</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>اسحب للأسفل</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- قسم المميزات -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">المميزات</span>
+                <h2 class="section-title">لماذا تختار <span>Idleb X IA؟</span></h2>
+                <p class="section-description">
+                    نقدم لك أحدث التقنيات وأقوى المميزات لتعديل الفيديوهات بكل سهولة
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>ذكاء اصطناعي متطور</h3>
+                    <p>خوارزميات تعلم عميق تقدم أفضل النتائج في تعديل الفيديوهات</p>
+                    <a href="#" class="feature-link">اعرف المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>سرعة خارقة</h3>
+                    <p>معالجة فيديوهاتك في ثوانٍ بفضل البنية التحتية السحابية القوية</p>
+                    <a href="#" class="feature-link">اعرف المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>خصوصية تامة</h3>
+                    <p>فيديوهاتك مشفرة وآمنة، ولا نشاركها مع أي طرف ثالث</p>
+                    <a href="#" class="feature-link">اعرف المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>بدون حدود</h3>
+                    <p>لا قيود على عدد المعالجات، اشترك واستمتع بمعالجة غير محدودة</p>
+                    <a href="#" class="feature-link">اعرف المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم كيف يعمل -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">كيف يعمل</span>
+                <h2 class="section-title">ثلاث خطوات لنتيجة <span>مذهلة</span></h2>
+            </div>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <h3>ارفع الفيديو</h3>
+                        <p>اختر الفيديو الذي تريد تعديله من جهازك</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3>اختر التأثيرات</h3>
+                        <p>اختر التأثيرات والتعديلات التي تريد تطبيقها</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3>حمل النتيجة</h3>
+                        <p>استلم فيديو احترافي جاهز للتحميل</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم معالج الفيديو -->
+    <section id="processor" class="processor">
+        <div class="container">
+            <div class="processor-wrapper">
+                <div class="processor-header">
+                    <h2>جرب <span>المعالج الذكي</span> الآن</h2>
+                    <p>أول فيديو مجاني - بدون بطاقة ائتمان</p>
+                </div>
+
+                <div class="processor-container">
+                    <!-- منطقة الرفع -->
+                    <div class="upload-area" id="uploadArea">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <h3>اسحب وأفلت الفيديو هنا</h3>
+                        <p>أو</p>
+                        <button class="btn btn-primary" id="selectFileBtn">اختر ملف</button>
+                        <input type="file" id="fileInput" accept="video/*" style="display: none;">
+                        <div class="file-requirements">
+                            <span><i class="fas fa-check-circle"></i> MP4, MOV, AVI</span>
+                            <span><i class="fas fa-check-circle"></i> حتى 100 ميجابايت</span>
+                            <span><i class="fas fa-check-circle"></i> حتى 5 دقائق</span>
+                        </div>
+                    </div>
+
+                    <!-- شريط التقدم -->
+                    <div class="progress-container" id="progressContainer" style="display: none;">
+                        <div class="progress-status">
+                            <span id="progressStatus">جاري رفع الملف...</span>
+                            <span id="progressPercentage">0%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <p class="progress-message">قد تستغرق العملية بضع دقائق</p>
+                    </div>
+
+                    <!-- نتيجة المعالجة -->
+                    <div class="result-container" id="resultContainer" style="display: none;">
+                        <div class="result-success">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>تمت المعالجة بنجاح!</h3>
+                        </div>
+                        <div class="video-preview">
+                            <video id="resultVideo" controls></video>
+                        </div>
+                        <div class="result-actions">
+                            <a href="#" id="downloadBtn" class="btn btn-primary" download>
+                                <i class="fas fa-download"></i> تحميل الفيديو
+                            </a>
+                            <button class="btn btn-outline" id="processAnotherBtn">
+                                <i class="fas fa-redo"></i> معالجة فيديو آخر
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- رسائل الخطأ -->
+                    <div class="error-message" id="errorMessage"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الباقات -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">الباقات</span>
+                <h2 class="section-title">اختر الخطة المناسبة <span>لك</span></h2>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>مجاني</h3>
+                        <div class="price">$0<span>/شهر</span></div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 3 معالجات في الشهر</li>
+                            <li><i class="fas fa-check"></i> مدة فيديو حتى 3 دقائق</li>
+                            <li><i class="fas fa-check"></i> حجم ملف حتى 50 ميجابايت</li>
+                            <li><i class="fas fa-check"></i> تأثيرات أساسية</li>
+                            <li class="disabled"><i class="fas fa-times"></i> معالجة أولوية</li>
+                            <li class="disabled"><i class="fas fa-times"></i> دعم فني متميز</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline btn-block">ابدأ مجاناً</button>
+                </div>
+
+                <div class="pricing-card popular">
+                    <div class="popular-badge">الأكثر شهرة</div>
+                    <div class="pricing-header">
+                        <h3>احترافي</h3>
+                        <div class="price">$19<span>/شهر</span></div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 50 معالجة في الشهر</li>
+                            <li><i class="fas fa-check"></i> مدة فيديو حتى 15 دقيقة</li>
+                            <li><i class="fas fa-check"></i> حجم ملف حتى 500 ميجابايت</li>
+                            <li><i class="fas fa-check"></i> جميع التأثيرات المتاحة</li>
+                            <li><i class="fas fa-check"></i> معالجة أولوية</li>
+                            <li class="disabled"><i class="fas fa-times"></i> دعم فني متميز</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary btn-block">اختر الخطة</button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>غير محدود</h3>
+                        <div class="price">$49<span>/شهر</span></div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> معالجة غير محدودة</li>
+                            <li><i class="fas fa-check"></i> مدة فيديو حتى 60 دقيقة</li>
+                            <li><i class="fas fa-check"></i> حجم ملف حتى 2 جيجابايت</li>
+                            <li><i class="fas fa-check"></i> جميع التأثيرات المتاحة</li>
+                            <li><i class="fas fa-check"></i> معالجة أولوية</li>
+                            <li><i class="fas fa-check"></i> دعم فني متميز VIP</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline btn-block">اختر الخطة</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الإحصائيات -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="stat-number" id="statVideos">0</div>
+                    <div class="stat-label">فيديو معالج</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" id="statUsers">0</div>
+                    <div class="stat-label">مستخدم نشط</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-number" id="statHours">0</div>
+                    <div class="stat-label">ساعة معالجة</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="stat-number" id="statSatisfaction">0%</div>
+                    <div class="stat-label">رضا العملاء</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>تواصل معنا</h2>
+                    <p>نحن هنا للإجابة على استفساراتك ومساعدتك في أي وقت</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>البريد الإلكتروني</h4>
+                                <a href="mailto:support@idlebxia.com">abnadlep8@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>رقم الهاتف</h4>
+                                <a href="tel:+966123456789">+1 (226) 877-8829</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>المكتب الرئيسي</h4>
+                                <p>سوريا ، ادلب ، اريحا</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="contactName" placeholder="الاسم الكامل" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contactEmail" placeholder="البريد الإلكتروني" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="contactSubject" placeholder="الموضوع" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contactMessage" placeholder="رسالتك..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">إرسال الرسالة</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">Idleb <span>X IA</span></div>
+                    <p>منصة رائدة في مجال تعديل الفيديوهات بالذكاء الاصطناعي، نقدم أحدث التقنيات وأفضل الخدمات لعملائنا حول العالم.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#features">المميزات</a></li>
+                        <li><a href="#how-it-works">كيف يعمل</a></li>
+                        <li><a href="#pricing">الباقات</a></li>
+                        <li><a href="#processor">المعالج</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>الدعم</h4>
+                    <ul>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">شروط الاستخدام</a></li>
+                        <li><a href="#">المدونة</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>النشرة البريدية</h4>
+                    <p>اشترك ليصلك كل جديد</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="بريدك الإلكتروني">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Idleb X IA. جميع الحقوق محفوظة</p>
+                <div class="footer-bottom-links">
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">شروط الاستخدام</a>
+                    <a href="#">خريطة الموقع</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+                      </html>
