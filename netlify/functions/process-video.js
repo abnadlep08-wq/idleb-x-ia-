@@ -25,7 +25,7 @@ export default async (req) => {
 
         // تهيئة عميل Magic Hour
         const client = new Client({ 
-            token: Netlify.env.get("MAGIC_HOUR_API_KEY") 
+            token: Netlify.env.get("mhk_live_ZnPCEcaXww2XIhgvJUMhRHOhbXCEWZqHETWY5os85mfx0hfMRuU3CDMRx75op3l4U8sjqG2Fqd0LnKR9") 
         });
 
         // هنا يجب إضافة الكود الخاص بمعالجة الفيديو حسب وثائق Magic Hour
